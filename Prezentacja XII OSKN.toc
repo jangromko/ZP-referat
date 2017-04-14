@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {polish}
+\beamer@sectionintoc {1}{Wprowadzenie}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Czym s\IeC {\k a} zbiory przybli\IeC {\.z}one \IeC {\textendash } historia i idea}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Mo\IeC {\.z}liwo\IeC {\'s}ci, zalety, zastosowania}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Podstawowe poj\IeC {\k e}cia}{7}{0}{1}
