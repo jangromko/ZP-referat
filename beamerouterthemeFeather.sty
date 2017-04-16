@@ -209,9 +209,9 @@
 %% calculate end position
 
                 \ifx\beamer@rotationcw\undefined% counterclockwise rotation
-                \pgfmathsetmacro{\progress}{220*\insertframestartpage/\inserttotalframenumber}; %%% 220 covers the entire circle, while 360 it goes twice 
+                \pgfmathsetmacro{\progress}{360*(\insertframestartpage-2)/(\inserttotalframenumber)}; %%% 220 covers the entire circle, while 360 it goes twice 
                 \else% clockwise rotation
-                \pgfmathsetmacro{\progress}{-220*\insertframestartpage/\inserttotalframenumber}; 
+                \pgfmathsetmacro{\progress}{-360*(\insertframestartpage-2)/(\inserttotalframenumber)}; 
                 \fi
 
 %----------------------------------------------------------------------------------------------------------------------------------
