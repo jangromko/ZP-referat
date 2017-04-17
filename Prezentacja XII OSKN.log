@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.3.19)  16 APR 2017 17:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.3.19)  17 APR 2017 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,7 +1283,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 81.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- (./Prezentacja XII OSKN.nav) <Feathergraphics/PBv4.png, id=31, 3212.0pt x 3212
+ (./Prezentacja XII OSKN.nav) <Feathergraphics/PBv4.png, id=59, 3212.0pt x 3212
 .0pt>
 File: Feathergraphics/PBv4.png Graphic file (type png)
 
@@ -1331,24 +1331,23 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 87.
 
-<Feathergraphics/PB-duży-środek.png, id=33, 963.6pt x 722.7pt>
-File: Feathergraphics/PB-duży-środek.png Graphic file (type png)
+<Feathergraphics/PB_duzy_v8.png, id=61, 963.6pt x 722.7pt>
+File: Feathergraphics/PB_duzy_v8.png Graphic file (type png)
 
-<use Feathergraphics/PB-duży-środek.png>
-Package pdftex.def Info: Feathergraphics/PB-duży-środek.png used on input lin
-e 87.
+<use Feathergraphics/PB_duzy_v8.png>
+Package pdftex.def Info: Feathergraphics/PB_duzy_v8.png used on input line 87.
 (pdftex.def)             Requested size: 364.18686pt x 273.14014pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Feathergraphics/PB-duży
--środek.png>]
-(./Prezentacja XII OSKN.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Feathergraphics/PB_duzy_
+v8.png>] (./Prezentacja XII OSKN.toc)
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <14.4> on input line 92.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 92.
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
+
+<use Feathergraphics/PBv4.png>
 Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 92.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
@@ -1356,7 +1355,8 @@ Missing character: There is no ; in font nullfont!
 
  <./Feathergraphics/PBv4.png>]
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
+
+<use Feathergraphics/PBv4.png>
 Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 106.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
@@ -1364,199 +1364,259 @@ Missing character: There is no ; in font nullfont!
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 120.
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 118.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [4
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 133.
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 139.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [5
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 151.
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 156.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [6
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 161.
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 169.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [7
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 175.
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 181.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [8
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 192.
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 201.
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 192.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [9
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 209.
 File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 209.
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 210.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [10
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 229.
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 221.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [11
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 241.
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 233.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [12
 
 ]
 File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 270.
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 245.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [13
 
 ]
-File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 293.
-(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
-Missing character: There is no ; in font nullfont!
- [14
-
-]
-File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 300.
-(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
-Missing character: There is no ; in font nullfont!
- [15
-
-]
-File: Feathergraphics/PBv4.png Graphic file (type png)
-
-<use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 329.
-(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
-Missing character: There is no ; in font nullfont!
- [16
-
-]
-File: Feathergraphics/PBv4.png Graphic file (type png)
- <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 359.
-(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
-Missing character: There is no ; in font nullfont!
- [17
-
-]
-<Grafiki/plama.png, id=178, 556.0775pt x 559.08875pt>
+<Grafiki/plama.png, id=191, 556.0775pt x 559.08875pt>
 File: Grafiki/plama.png Graphic file (type png)
  <use Grafiki/plama.png>
-Package pdftex.def Info: Grafiki/plama.png used on input line 371.
+Package pdftex.def Info: Grafiki/plama.png used on input line 255.
 (pdftex.def)             Requested size: 169.01036pt x 169.92891pt.
 File: Feathergraphics/PBv4.png Graphic file (type png)
 
 <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 371.
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 255.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
- [18
+ [14
 
  <./Grafiki/plama.png>]
-<Grafiki/dolne_przyblizenie.png, id=187, 551.05875pt x 546.04pt>
+<Grafiki/dolne_przyblizenie.png, id=200, 551.05875pt x 546.04pt>
 File: Grafiki/dolne_przyblizenie.png Graphic file (type png)
 
 <use Grafiki/dolne_przyblizenie.png>
-Package pdftex.def Info: Grafiki/dolne_przyblizenie.png used on input line 382.
+Package pdftex.def Info: Grafiki/dolne_przyblizenie.png used on input line 266.
 
 (pdftex.def)             Requested size: 169.01036pt x 167.47096pt.
 File: Feathergraphics/PBv4.png Graphic file (type png)
  <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 382.
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 266.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
- [19
+ [15
 
  <./Grafiki/dolne_przyblizenie.png>]
-<Grafiki/obszar_brzegowy.png, id=197, 554.07pt x 554.07pt>
+<Grafiki/obszar_brzegowy.png, id=209, 554.07pt x 554.07pt>
 File: Grafiki/obszar_brzegowy.png Graphic file (type png)
 
 <use Grafiki/obszar_brzegowy.png>
-Package pdftex.def Info: Grafiki/obszar_brzegowy.png used on input line 393.
+Package pdftex.def Info: Grafiki/obszar_brzegowy.png used on input line 277.
 (pdftex.def)             Requested size: 169.01036pt x 169.00378pt.
 File: Feathergraphics/PBv4.png Graphic file (type png)
  <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 393.
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 277.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
- [20
+ [16
 
  <./Grafiki/obszar_brzegowy.png>]
-<Grafiki/gorne_przyblizenie.png, id=206, 552.0625pt x 552.0625pt>
+<Grafiki/gorne_przyblizenie.png, id=218, 552.0625pt x 552.0625pt>
 File: Grafiki/gorne_przyblizenie.png Graphic file (type png)
 
 <use Grafiki/gorne_przyblizenie.png>
-Package pdftex.def Info: Grafiki/gorne_przyblizenie.png used on input line 403.
+Package pdftex.def Info: Grafiki/gorne_przyblizenie.png used on input line 287.
 
 (pdftex.def)             Requested size: 169.01036pt x 169.00638pt.
 File: Feathergraphics/PBv4.png Graphic file (type png)
  <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 403.
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 287.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
- [21
+ [17
 
  <./Grafiki/gorne_przyblizenie.png>]
 File: Feathergraphics/PBv4.png Graphic file (type png)
  <use Feathergraphics/PBv4.png>
-Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 418.
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 297.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [18
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 332.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [19
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 364.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [20
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 396.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [21
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 428.
 (pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
 Missing character: There is no ; in font nullfont!
  [22
 
 ]
-File: Feathergraphics/PB-duży-środek.png Graphic file (type png)
+File: Feathergraphics/PBv4.png Graphic file (type png)
 
-<use Feathergraphics/PB-duży-środek.png>
-Package pdftex.def Info: Feathergraphics/PB-duży-środek.png used on input lin
-e 432.
-(pdftex.def)             Requested size: 364.18686pt x 273.14014pt.
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 458.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
  [23
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 488.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [24
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 511.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [25
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 524.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [26
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 541.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [27
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+ <use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 553.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [28
+
+]
+File: Feathergraphics/PBv4.png Graphic file (type png)
+
+<use Feathergraphics/PBv4.png>
+Package pdftex.def Info: Feathergraphics/PBv4.png used on input line 570.
+(pdftex.def)             Requested size: 37.40611pt x 37.39548pt.
+Missing character: There is no ; in font nullfont!
+ [29
+
+]
+File: Feathergraphics/PB_duzy_v8.png Graphic file (type png)
+ <use Feathergraphics/PB_duzy_v8.png>
+Package pdftex.def Info: Feathergraphics/PB_duzy_v8.png used on input line 582.
+
+(pdftex.def)             Requested size: 364.18686pt x 273.14014pt.
+
+[30
 
 ]
 \tf@nav=\write6
@@ -1568,40 +1628,43 @@ e 432.
 \tf@snm=\write8
 \openout8 = `"Prezentacja XII OSKN.snm"'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 585.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 585.
  (./Prezentacja XII OSKN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 585.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 585.
 Package rerunfilecheck Info: File `"Prezentacja XII OSKN".out' has not changed.
 
-(rerunfilecheck)             Checksum: 67EB97D5C474866AC85987CE3E1E6C1F;291.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
+(rerunfilecheck)             Checksum: EACEA654840411E9B4B59084C344A04A;794.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 585.
  ) 
 Here is how much of TeX's memory you used:
- 20610 strings out of 493304
- 381060 string characters out of 6139871
+ 20671 strings out of 493304
+ 381681 string characters out of 6139871
  467624 words of memory out of 5000000
- 23488 multiletter control sequences out of 15000+600000
- 50857 words of font info for 67 fonts, out of 8000000 for 9000
+ 23527 multiletter control sequences out of 15000+600000
+ 52074 words of font info for 68 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  52i,17n,60p,421b,895s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texliv
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/e
-nc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
-}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvro8a.pfb>
-Output written on "Prezentacja XII OSKN.pdf" (23 pages, 642958 bytes).
+nc/dvips/pl/plme.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc
+}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy7.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfb
+x1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on "Prezentacja XII OSKN.pdf" (30 pages, 659128 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
