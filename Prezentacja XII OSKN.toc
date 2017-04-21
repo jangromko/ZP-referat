@@ -3,11 +3,10 @@
 \beamer@sectionintoc {1}{Wprowadzenie}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Czym s\IeC {\k a} zbiory przybli\IeC {\.z}one \IeC {\textendash } historia i idea}{3}{0}{1}
 \beamer@subsectionintoc {1}{2}{Podstawowe poj\IeC {\k e}cia}{4}{0}{1}
-\beamer@sectionintoc {2}{Problem redukcji}{18}{0}{2}
-\beamer@subsectionintoc {2}{1}{Istota problemu redukcji}{18}{0}{2}
-\beamer@subsectionintoc {2}{2}{Prosty algorytm redukcji}{25}{0}{2}
-\beamer@subsectionintoc {2}{3}{Problem z\IeC {\l }o\IeC {\.z}ono\IeC {\'s}ci wyznaczania redukt\IeC {\'o}w}{25}{0}{2}
-\beamer@subsectionintoc {2}{4}{Przybli\IeC {\.z}one metody wyznaczania reduktu}{25}{0}{2}
-\beamer@sectionintoc {3}{Znaczenie zbior\IeC {\'o}w przybli\IeC {\.z}onych}{25}{0}{3}
-\beamer@subsectionintoc {3}{1}{Mo\IeC {\.z}liwo\IeC {\'s}ci i zalety}{25}{0}{3}
-\beamer@subsectionintoc {3}{2}{Zastosowania}{27}{0}{3}
+\beamer@sectionintoc {2}{Problem redukcji}{19}{0}{2}
+\beamer@subsectionintoc {2}{1}{Istota problemu redukcji}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{Prosty algorytm wyznaczania reduktu}{29}{0}{2}
+\beamer@subsectionintoc {2}{3}{Alternatywne metody wyznaczania reduktu}{34}{0}{2}
+\beamer@sectionintoc {3}{Znaczenie i kierunki rozwoju zbior\IeC {\'o}w przybli\IeC {\.z}onych}{40}{0}{3}
+\beamer@subsectionintoc {3}{1}{Mo\IeC {\.z}liwo\IeC {\'s}ci i zalety}{40}{0}{3}
+\beamer@subsectionintoc {3}{2}{Zastosowania}{42}{0}{3}

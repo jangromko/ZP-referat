@@ -32,6 +32,7 @@
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{soul}
 
 
 %-------------------------------------------------------
@@ -171,11 +172,25 @@ $A = C \cup D$ -- zbiór atrybutów\\
 
 \begin{frame}
 \frametitle{Podstawowe pojęcia}
-\begin{spacing}{1.7}
+\begin{table}
+\begin{tabular}{|k{1.2cm}|k{1.8cm}|k{1.8cm}|k{2.2cm}|k{1.4cm}|@{}m{0pt}@{}}
+\hline
+\textit{Pacjent} & \textit{Ból głowy} & \textit{Ból mięśni} & \textit{Temperatura} &  \textit{Grypa} &\\[1ex]
+\hline
+1 & nie & tak & podwyższona & tak &\\[1ex]
+2 & tak & nie & podwyższona & tak &\\[1ex]
+3 & tak & tak & wysoka & tak &\\[1ex]
+4 & nie & tak & normalna & nie &\\[1ex]
+5 & tak & nie & podwyższona & nie &\\[1ex]
+6 & nie & nie & wysoka & tak &\\[1ex]
+\hline
+\end{tabular}
+\caption{Tablica decyzyjna przykładowego zbioru.}
+\end{table}
+\begin{spacing}{1}
 \begin{flushleft}
 $U$ -- pacjenci\\
-$C = \lbrace$\textit{ból głowy, ból mięśni, temperatura}$\rbrace$\\
-$D$ -- \textit{grypa}\\
+$C = \lbrace$\textit{ból głowy, ból mięśni, temperatura}$\rbrace$, $D$ -- \textit{grypa}\\
 \end{flushleft}
 \end{spacing}
 \end{frame}
@@ -213,10 +228,10 @@ Znaleźć zależność między występowaniem/niewystępowaniem grypy a symptoma
 \begin{frame}{Podstawowe pojęcia}
 \begin{block}{Relacja nierozróżnialności}
 Relację nierozróżnialności zdefiniowana jest jako
-$$I(B)=\lbrace (x,y) \in U \times U: \forall a \in B~~f(a,x)=f(a,y) \rbrace,$$
+$$IND(B)=\lbrace (x,y) \in U \times U: \forall_{a \in B}~~a(x)=a(y) \rbrace,$$
 gdzie $B \subseteq A$.\\
 $\newline$
-Jeśli $(x, y) \in I(B)$, wówczas obiekty $x$ i $y$ są nierozróżnialne ze~względu na podzbiór atrybutów $B$.
+Jeśli $(x, y) \in IND(B)$, wówczas obiekty $x$ i $y$ są nierozróżnialne ze~względu na podzbiór atrybutów $B$.
 \end{block}
 \end{frame}
 
@@ -266,6 +281,16 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \end{frame}
 
 
+\begin{frame}{Górne przybliżenie}
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.55\textwidth]{Grafiki/gorne_przyblizenie.png}
+\caption{Górne przybliżenie zbioru.}
+\end{figure}
+\end{center}
+\end{frame}
+
+
 \begin{frame}{Obszar brzegowy}
 \begin{center}
 \begin{figure}
@@ -277,22 +302,57 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \end{frame}
 
 
-\begin{frame}{Górne przybliżenie}
-\begin{center}
-\begin{figure}
-\includegraphics[width=0.55\textwidth]{Grafiki/gorne_przyblizenie.png}
-\caption{Górne przybliżenie zbioru.}
-\end{figure}
-\end{center}
+
+\begin{frame}{Podstawy}
+\begin{spacing}{1.5}
+\begin{itemize}
+\item Zbiory przybliżone oparte są o logikę trójwartościową;
+\item zbiór przybliżony jest zbiorem niedefiniowalnym -- nie można go jednoznacznie scharakteryzować na podstawie własności jego~elementów;
+\item \textbf{zbiór przybliżony można jednak scharakteryzować za~pomocą dwóch zbiorów definiowalnych -- dolnego i~górnego przybliżenia.}
+\end{itemize}
+
+\end{spacing}
 \end{frame}
 
 
 \section{Problem redukcji}
 
+
+\begin{frame}
+\begin{Huge}
+\textbf{Problem redukcji}
+\end{Huge}
+\end{frame}
+
 \subsection{Istota problemu redukcji}
-\begin{frame}{Redukcja}
+\begin{frame}{Istota problemu}
 \begin{spacing}{1.5}
 \textbf{Czy można zredukować zbiór pod~względem atrybutów w~ten~sposób, by~zachowana była rozróżnialność elementów z~oryginalnego zbioru?}
+\end{spacing}
+\end{frame}
+
+\begin{frame}
+\frametitle{Redukcja}
+\begin{spacing}{1.5}
+\begin{block}{Zbiór niezależny}
+Zbiór atrybutów $B_{1} \subset A$ jest \textit{niezależny} w danym systemie informacyjnym, jeśli dla każdego $B_{2} \subset B_{1}$ zachodzi $IND(B_{1}) \neq IND(B_{2})$.
+\end{block}
+
+\begin{block}{Redukt}
+\textit{Reduktem} zbioru atrybutów $B_{1} \subseteq A$ nazywamy każdy niezależny zbiór $B_{2} \subseteq B_{1}$, dla którego $IND(B_{1}) = IND(B_{2})$, przy czym $B_{2}$ powinien być 
+jak najmniej liczny. Może istnieć wiele reduktów.
+\end{block}
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Tworzenie macierzy rozróżnialności}{Zasady}
+\begin{spacing}{1.5}
+\begin{itemize}
+\item W każdej komórce macierzy rozróżnialności umieszczane są atrybuty rozróżniające każde dwa obiekty,
+\item rozróżniamy jedynie obiekty należące do różnych klas decyzyjnych,
+\item wystarczające jest wypełnienie jedynie połowy macierzy (dzielonej według głównej przekątnej), ponieważ jeśli obiekt $x_{1}$ jest rozróżnialny od atrybutu $x_{2}$ przez zbiór atrybutów $K$, to obiekt $x_{2}$ jest rozróżnialny od atrybutu $x_{1}$ przez ten sam zbiór atrybutów.
+\end{itemize}
 \end{spacing}
 \end{frame}
 
@@ -342,7 +402,7 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \textit{Pacjent} & \textit{Ból głowy} & \textit{Ból mięśni} & \textit{Temperatura} &  \textit{Grypa} &\\[1ex]
 \hline
 1 & nie & tak & podwyższona & tak &\\[1ex]
-4 & nie & tak & normalna & nie &\\[1ex]
+5 & tak & nie & podwyższona & nie &\\[1ex]
 \hline
 \end{tabular}
 \caption{Fragment tablicy decyzyjnej.}
@@ -353,7 +413,7 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \hline
 & 1 & 2 & 3 & 4 & 5 & 6 & \\[1ex]
 \hline
-4 & t & ? & ? & $\emptyset$ & -- & -- &\\[1ex]
+5 & \alert{g, m} & ? & ? & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
 \hline
 \end{tabular}
 \caption{Fragment macierzy rozróżnialności.}
@@ -374,7 +434,7 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \textit{Pacjent} & \textit{Ból głowy} & \textit{Ból mięśni} & \textit{Temperatura} &  \textit{Grypa} &\\[1ex]
 \hline
 2 & tak & nie & podwyższona & tak &\\[1ex]
-4 & nie & tak & normalna & nie &\\[1ex]
+5 & tak & nie & podwyższona & nie &\\[1ex]
 \hline
 \end{tabular}
 \caption{Fragment tablicy decyzyjnej.}
@@ -385,7 +445,7 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \hline
 & 1 & 2 & 3 & 4 & 5 & 6 & \\[1ex]
 \hline
-4 & t & g, m, t & ? & $\emptyset$ & -- & -- &\\[1ex]
+5 & g, m & \alert{$\emptyset$} & ? & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
 \hline
 \end{tabular}
 \caption{Fragment macierzy rozróżnialności.}
@@ -406,7 +466,7 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \textit{Pacjent} & \textit{Ból głowy} & \textit{Ból mięśni} & \textit{Temperatura} &  \textit{Grypa} &\\[1ex]
 \hline
 3 & tak & tak & wysoka & tak &\\[1ex]
-4 & nie & tak & normalna & nie &\\[1ex]
+5 & tak & nie & podwyższona & nie &\\[1ex]
 \hline
 \end{tabular}
 \caption{Fragment tablicy decyzyjnej.}
@@ -417,7 +477,7 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \hline
 & 1 & 2 & 3 & 4 & 5 & 6 & \\[1ex]
 \hline
-4 & t & g, m, t & g, t & $\emptyset$ & -- & -- &\\[1ex]
+5 & g, m & $\emptyset$ & \alert{m, t} & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
 \hline
 \end{tabular}
 \caption{Fragment macierzy rozróżnialności.}
@@ -426,7 +486,6 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \end{center}
 
 \end{frame}
-
 
 
 \begin{frame}{Macierz rozróżnialności -- oryginalny zbiór}
@@ -488,16 +547,203 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \end{frame}
 
 
-\subsection{Prosty algorytm redukcji}
+\subsection{Prosty algorytm wyznaczania reduktu}
 
-\subsection{Problem złożoności wyznaczania reduktów}
+\begin{frame}{Prosty algorytm wyznaczania reduktu}
+\begin{spacing}{1.5}
+\begin{enumerate}
+\item Zliczenie wystąpień atrybutów w macierzy rozróżnialności.
+\item Wybór atrybutu występującego najliczniej w macierzy rozróżnialności; dodanie wybranego atrybutu do wynikowego zbioru atrybutów $Red$.
+\item Wykreślenie komórek zawierających wybrany atrybut.
+\item Jeśli wszystkie komórki zostały wykreślone, wynikiem jest uzyskany zbiór $Red$, w przeciwnym razie powrót do kroku 1.
+\end{enumerate}
+\end{spacing}
+\end{frame}
 
-\subsection{Przybliżone metody wyznaczania reduktu}
+
+
+\begin{frame}{Prosty algorytm redukcji}
+\renewcommand{\arraystretch}{1}
+\begin{center}
+\begin{table}
+\begin{tabular}{|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|@{}m{0pt}@{}}
+\hline
+& 1 & 2 & 3 & 4 & 5 & 6&\\[1ex]
+\hline
+4 & t & g, m, t & g, t & $\emptyset$ & -- & -- &\\[1ex]
+\hline
+5 & g, m & $\emptyset$ & m, t & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
+\hline
+6 &$\emptyset$ & $\emptyset$ & $\emptyset$ & m, t & g, t & $\emptyset$ &\\[1ex]
+\hline
+\end{tabular}
+\caption{Fragment macierzy rozróżnialności zawierający istotne dane.}
+\end{table}
+$\newline$
+\begin{spacing}{1.5}
+g -- 4~~~~~~~~~~~~~m -- 4~~~~~~~~~~~~~\alert{t -- 6}\\
+\end{spacing}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Prosty algorytm redukcji}
+\renewcommand{\arraystretch}{1}
+\begin{center}
+\begin{table}
+\begin{tabular}{|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|@{}m{0pt}@{}}
+\hline
+& 1 & 2 & 3 & 4 & 5 & 6&\\[1ex]
+\hline
+4 & \st{t} & \st{g, m, t} & \st{g, t} & $\emptyset$ & -- & -- &\\[1ex]
+\hline
+5 & g, m & $\emptyset$ & \st{m, t} & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
+\hline
+6 &$\emptyset$ & $\emptyset$ & $\emptyset$ & \st{m, t} & \st{g, t} & $\emptyset$ &\\[1ex]
+\hline
+\end{tabular}
+\caption{Fragment macierzy rozróżnialności zawierający istotne dane.}
+\end{table}
+$\newline$
+\begin{spacing}{1.5}
+$Red = \lbrace t \rbrace$\\
+\alert{g -- 1~~~~~~~~~~~~~m -- 1}
+\end{spacing}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Prosty algorytm redukcji}
+\renewcommand{\arraystretch}{1}
+\begin{center}
+\begin{table}
+\begin{tabular}{|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|@{}m{0pt}@{}}
+\hline
+& 1 & 2 & 3 & 4 & 5 & 6&\\[1ex]
+\hline
+4 & \st{t} & \st{g, m, t} & \st{g, t} & $\emptyset$ & -- & -- &\\[1ex]
+\hline
+5 & \st{g, m} & $\emptyset$ & \st{m, t} & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
+\hline
+6 &$\emptyset$ & $\emptyset$ & $\emptyset$ & \st{m, t} & \st{g, t} & $\emptyset$ &\\[1ex]
+\hline
+\end{tabular}
+\caption{Fragment macierzy rozróżnialności zawierający istotne dane.}
+\end{table}
+$\newline$
+\begin{spacing}{1.5}
+$Red = \lbrace t, g \rbrace \vee Red = \lbrace t, m \rbrace$\\
+\end{spacing}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Rdzeń}
+\renewcommand{\arraystretch}{1}
+\begin{center}
+\begin{table}
+\begin{tabular}{|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|k{1cm}|@{}m{0pt}@{}}
+\hline
+& 1 & 2 & 3 & 4 & 5 & 6&\\[1ex]
+\hline
+1 & $\emptyset$ & -- & -- & -- & -- & -- &\\[1ex]
+\hline
+2 & $\emptyset$ & $\emptyset$ & -- & -- & -- & -- &\\[1ex]
+\hline
+3 & $\emptyset$ & $\emptyset$ & $\emptyset$ & -- & -- & -- &\\[1ex]
+\hline
+4 & \alert{t} & g, m, t & g, t & $\emptyset$ & -- & -- &\\[1ex]
+\hline
+5 & g, m & $\emptyset$ & m, t & $\emptyset$ & $\emptyset$ & -- &\\[1ex]
+\hline
+6 &$\emptyset$ & $\emptyset$ & $\emptyset$ & m, t & g, t & $\emptyset$ &\\[1ex]
+\hline
+\end{tabular}
+\caption{Macierz rozróżnialności oryginalnego zbioru.}
+\end{table}
+\begin{spacing}{1.5}
+$Red = \lbrace \alert{t}, g \rbrace \vee Red = \lbrace \alert{t}, m \rbrace$\\
+\end{spacing}
+\end{center}
+\end{frame}
+
+
+\subsection{Alternatywne metody wyznaczania reduktu}
+
+\begin{frame}{Problem złożoności wyznaczania reduktu}
+\begin{spacing}{1.5}
+Wyznaczanie reduktu w zbiorze przybliżonym jest problemem NP-zupełnym -- nie jest możliwe znalezienie rozwiązania w~czasie~wielomianowym.
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Alternatywne metody wyznaczania reduktu}
+\begin{spacing}{1.5}
+Rozwiązania sprzętowe:\\
+\begin{itemize}
+\item specjalizowane układy programowalne.
+\end{itemize}
+
+Rozwiązania przybliżone -- wykorzystanie innych metod sztucznej~inteligencji:\\
+\begin{itemize}
+\item algorytmy ewolucyjne,
+\item algorytmy mrówkowe,
+\item inteligencja roju,
+\item metody połączone.
+\end{itemize}
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Rozwiązania sprzętowe}
+\begin{spacing}{1.2}
+\begin{itemize}
+\item Opis zbiorów przybliżonych z wykorzystaniem sieci komórkowych (\textit{cellular networks}; na tej podstawie w 1994 r. opracowana została koncepcja PRSComp (\textit{Parallel Rough Sets COMPuter}) --\\Rybiński, Muraszkiewicz (1984);
+\item idea samouczącego się systemu, wykorzystującego sieci komórkowe -- uczenie systemu w warstwie oprogramowania, na~podstawie wyników tworzona jest warstwa sprzętowa --\\Lewis, Perkowski, Jóźwiak (1999);
+\item implementacja systemu opartego o sieci komórkowe -- Dharmadhikari, Ngo, Lewisa (1999);
+\item koncepcja RSP (\textit{Roug Set Processor}) -- Pawlak (2004);
+\end{itemize}
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Rozwiązania sprzętowe (cd.)}
+\begin{spacing}{1.2}
+\begin{itemize}
+\item idea systemu wspierającego w sposób sprzętowy minimalizację funkcji logicznych, tworzonych na podstawie macierzy rozróżnialności -- Kanasugi, Yokoyama (2001);
+\item implementacja wyżej wymienionego rozwiązania w FPGA, 700-krotne skrócenie czasu obliczeń w porównaniu do tradycyjnych rozwiązań -- Kanasugi, Matsumoto (2007);
+\item koprocesor wspomagający sprzętowo niektóre operacje na ZP -- Tiwari, Kothari (2015);
+\item implementacje sprzętowe na FPGA i~CPLD metod ZP od~operacji podstawowych (jak np. obliczanie aproksymacji), przez wyznaczanie rdzeni i~reduktów, po~generowanie reguł decyzyjnych~-- Kopczyński (2016).
+\end{itemize}
+\end{spacing}
+\end{frame}
+
+
+
+\begin{frame}{Rozwiązania przybliżone}
+\begin{spacing}{1.2}
+\begin{itemize}
+\item Algorytmy genetyczne, oparte o sprowadzenie problemu redukcji do~problemu pokrycia kolumnowego macierzy, w~której kolumny odpowiadają atrybutom, a~wiersze parom obiektów, które~wymagają rozróżnienia -- Wróblewski (2001);
+\item redukcja ZP przy pomocy algorytmów mrówkowych --\\Jensen, Shen (2003);
+\item algorytm hybrydowy, łączący algorytmy mrówkowe i inteligencję roju -- Pratiwi, Choo, Muda (2011);
+\end{itemize}
+\end{spacing}
+\end{frame}
+
+
+\begin{frame}{Rozwiązania przybliżone (cd.)}
+\begin{spacing}{1.2}
+\begin{itemize}
+\item propozycja algorytmu genetycznego opartego o kodowanie chromosomów jako zbioru atrybutów w potencjalnym redukcie -- Zhengjiang, Jingmin, Yan (2012);
+\item propozycja ulepszenia wyżej wymienionego algorytmu -- atrybuty należące do rdzenia chronione są przed mutacją, selekcja osobników na~podstawie znormalizowanego współczynnika istotności -- Chen, Liu, Wan (2014).
+\end{itemize}
+\end{spacing}
+\end{frame}
 
 
 
 
-\section{Znaczenie zbiorów przybliżonych}
+\section{Znaczenie i kierunki rozwoju zbiorów przybliżonych}
 \subsection{Możliwości i zalety}
 \begin{frame}{Możliwości}
 \begin{spacing}{1.5}
@@ -535,7 +781,8 @@ Wszystkie te elementy, których przynależności do danego zbioru nie można wyk
 \item lingwistyka,
 \item rozpoznawanie mowy,
 \item ochrona środowiska,
-\item bazy danych.
+\item bazy danych,
+\item ogólniej -- przetwarzanie dużych zbiorów danych.
 \end{itemize}
 \end{spacing}
 \end{frame}
@@ -553,7 +800,6 @@ Ograniczenie liczby badań medycznych do jedynie tych,\\które są naprawdę kon
 \end{frame}
 
 
-
 % KONIEC – BIBLIOGRAFIA I SLAJD KOŃCOWY NA PYTANIA
 
 \begin{frame}
@@ -565,6 +811,10 @@ Ograniczenie liczby badań medycznych do jedynie tych,\\które są naprawdę kon
 \newblock Zbiory przybliżone -- nowa matematyczna metoda analizy danych 
 \bibitem{p1} Leszek Rutkowski
 \newblock Metody i techniki sztucznej inteligencji
+\bibitem{p1} Jakub Wróblewski
+\newblock Adaptacyjne metody klasyfikacji obiektów
+\bibitem{p1} Maciej Kopczyński
+\newblock Wspomaganie decyzji oparte na sprzętowej realizacji metod zbiorów~przybliżonych
 \end{thebibliography}
 }
 \end{frame}
